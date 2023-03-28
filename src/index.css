@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+/*****NAVBAR*****/
+#dropdown-basic-button {
+  font-weight: 300;
+}
+.brand {
+  font-weight: 900;
+}
+span {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.nav button {
+  border: 2px solid rgb(0, 0, 0, 0.5);
+  background: white;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.5s;
+}
+.nav button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.nav {
+  font-size: smaller;
+}
+
+/*****HOME*****/
+.home {
+  gap: 200px;
+}
+.home-left {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.home-left h1 {
+  font-weight: 900;
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+}
+.home-left p {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.home-left .btn {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-bottom: 7rem;
+  font-weight: 500;
+  transition: all 0.5s;
+  padding: 15px 40px 15px 40px;
+}
+.home-left .btn:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.home-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.home-right img {
+  max-width: 450px;
+}
+@media only screen and (max-width: 767px) {
+  .home {
+    text-align: center;
+  }
+  .home-left h1 {
+    font-size: 3rem;
+  }
+
+  .home-left .btn {
+    padding: 15px 30px 15px 30px;
+  }
+
+  .home-right img {
+    max-width: 300px;
+  }
+  .home-right {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .home {
+    text-align: center;
+  }
+  .home-right img {
+    max-width: 400px;
+  }
+  .home-right {
+    justify-content: center;
+  }
+}
